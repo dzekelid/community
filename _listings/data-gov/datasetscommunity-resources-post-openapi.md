@@ -3,8 +3,8 @@ swagger: "2.0"
 x-collection-name: Data.Gov
 x-complete: 0
 info:
-  title: Data.gov API Delete Datasets Community Resources Community
-  description: Delete a given community resource
+  title: Data.gov API Add Datasets Community Resources
+  description: Create a new community resource
   version: "3"
 host: catalog.data.gov
 basePath: /api/3/
@@ -64,27 +64,6 @@ paths:
       - Datasets
       - Community
       - Resources
-  /datasets/community_resources/{community}/:
-    delete:
-      summary: Delete Datasets Community Resources Community
-      description: Delete a given community resource
-      operationId: deleteDatasetsCommunityResourcesCommunity
-      x-api-path-slug: datasetscommunity-resourcescommunity-delete
-      parameters:
-      - in: path
-        name: community
-        description: The community resource unique identifier
-      - in: query
-        name: dataset
-        description: The dataset ID or slug
-      responses:
-        200:
-          description: OK
-      tags:
-      - Datasets
-      - Community
-      - Resources
-      - Community
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0

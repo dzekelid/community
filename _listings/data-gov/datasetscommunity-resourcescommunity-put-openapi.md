@@ -3,8 +3,8 @@ swagger: "2.0"
 x-collection-name: Data.Gov
 x-complete: 0
 info:
-  title: Data.gov API Delete Datasets Community Resources Community
-  description: Delete a given community resource
+  title: Data.gov API Put Datasets Community Resources Community
+  description: Update a given community resource
   version: "3"
 host: catalog.data.gov
 basePath: /api/3/
@@ -77,6 +77,50 @@ paths:
       - in: query
         name: dataset
         description: The dataset ID or slug
+      responses:
+        200:
+          description: OK
+      tags:
+      - Datasets
+      - Community
+      - Resources
+      - Community
+    get:
+      summary: Get Datasets Community Resources Community
+      description: Retrieve a community resource given its identifier
+      operationId: getDatasetsCommunityResourcesCommunity
+      x-api-path-slug: datasetscommunity-resourcescommunity-get
+      parameters:
+      - in: path
+        name: community
+        description: The community resource unique identifier
+      - in: query
+        name: dataset
+        description: The dataset ID or slug
+      responses:
+        200:
+          description: OK
+      tags:
+      - Datasets
+      - Community
+      - Resources
+      - Community
+    put:
+      summary: Put Datasets Community Resources Community
+      description: Update a given community resource
+      operationId: putDatasetsCommunityResourcesCommunity
+      x-api-path-slug: datasetscommunity-resourcescommunity-put
+      parameters:
+      - in: path
+        name: community
+        description: The community resource unique identifier
+      - in: query
+        name: dataset
+        description: The dataset ID or slug
+      - in: body
+        name: payload
+        schema:
+          $ref: '#/definitions/holder'
       responses:
         200:
           description: OK

@@ -7,11 +7,24 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/6564-meetu
 x-kinRank: "9"
 x-alexaRank: "917"
 tags: Community
-created: "2018-08-25"
-modified: "2018-08-25"
+created: "2018-08-27"
+modified: "2018-08-27"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/community/master/_listings/meetup/apis.md
 specificationVersion: "0.14"
-apis: []
+apis:
+- name: Meetup - Report Group
+  x-api-slug: urlnameabuse-reports-post
+  description: Submits a new abuse report for a target group. Abuse reports will be
+    followed up on by our Community Support team.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/6564-meetup.jpg
+  humanURL: http://meetup.com
+  baseURL: https://api.meetup.com//
+  tags: Meetups, Events, My API Stack, Stack Network, Stack, Media, Marketplace, internet,
+    API Provider, API Service Provider, Profiles, General Data, Relative Data, Service
+    API, Pedestal, Historical Data API, Relative StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/community/master/_listings/meetup/urlnameabuse-reports-post-openapi.md
 x-common:
 - type: x-api-gallery
   url: http://medium.api.gallery.streamdata.io
